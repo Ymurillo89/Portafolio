@@ -1,0 +1,155 @@
+body{
+    /*resetea los margenes*/
+    margin: 0;
+/*    background-color:  #121212;*/
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   grid-gap: 10px;
+   background-color: #2196F3;
+   padding: 10px;
+}
+
+ div {
+    
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+    
+  }
+
+
+/*Aside personal information*/
+
+.personalInformation{
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: auto auto;
+    width: auto;
+    height: auto;
+    row-gap: 5px;
+    grid-row: 1 / 4;/*Con esto me dejo poner el cuadro a la mitad*/
+}
+
+.image{
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.image img{
+
+    width: 80%;
+    height: inherit;/*Tomando el tamaño del contenedor*/
+    border-radius: 5%;
+    
+}
+
+.image h2{
+    font-size: 15px;
+    text-align: center;
+}
+.image p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+.experience{
+    margin-top: 10px;
+    background-color: red;
+    border-radius: 5px;
+
+}
+.principaltitle{
+    font-size: 15px;
+    padding: 0;
+}
+
+.experienceItem h3{
+    font-size: 15px;
+    text-align: justify;
+    padding: 0;
+}
+
+/*End aside personal information*/
+
+/*Section knowledge*/
+.knowledge{
+    
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    grid-column: 2 / 6;
+    /*background-color: gray;*/
+    height: 10%;
+    column-gap: 5px;
+}
+
+.developer{
+    background-color: royalblue;
+    padding: 0;
+    border: radius 5px; 
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.title{
+    font-size: 15px;
+    text-align: start;
+    background-color: red;
+    
+    padding:0;
+}
+
+.text{
+
+    font-size: 15px;
+    text-align: justify;
+    background-color: red;
+    padding: 0;
+}
+/*End section knowledge*/
+
+
+/*Main projects*/
+
+.projects{
+    margin: 0;
+    display: grid;
+    grid-column: 2 / 6;
+    background-color: cornflowerblue;
+    padding: 0;
+    grid-template-columns: auto auto;
+
+}
+
+
+
+
+/*End projects*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,24 +1,26 @@
+/*Variables en CSS*/
 :root{
+
     --primary-color:#000033;
     --bg-card-color:#062f4f;
-    
+    --color-title:#fff;
+    --color-text:gray;    
 }
 
 
 body{
     /*resetea los margenes*/
     margin: 0;
-/*    background-color:  #121212;*/
     background-color:  var(--primary-color);
 }
 
 .grid-container {
     
    display: grid;
-   grid-template-columns: auto auto auto auto auto auto;
+   grid-template-columns: 25% 25% 40% ;
    grid-gap: 10px;
-   
    padding: 10px;
+
 }
 
  div {
@@ -35,52 +37,97 @@ body{
 .personalInformation{
     margin-top: 10px;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 45% 50%;
     width: auto;
-    height: auto;
+    
     row-gap: 5px;
-    grid-row: 1 / 4;/*Con esto me dejo poner el cuadro a la mitad*/
+    grid-row: 1 / 4;/*Con esto me dejo poner Projects en la mitad de la pantalla */
 }
 
-.image{
+.personal-section{
+    margin: 0;
     background-color:var(--bg-card-color);
     border-radius: 5px;
+    
 }
 
-.image img{
+.personal-section img{
 
-    width: 80%;
+    width: 70%;
     height: inherit;/*Tomando el tamaño del contenedor*/
     border-radius: 5%;
     
 }
 
-.image h2{
-    font-size: 15px;
-    text-align: center;
+.personal-section h2{
+    font-size: 20px;
+    color: var(--color-title);
+    /*font-family: 'Acme', sans-serif;*/
+    text-align: left;
+    padding-left: 40px;
 }
-.image p{
-    font-size: 15px;
+.personal-section p{
+    font-size: 20px;
     text-align: justify;
+    padding: 12px;
 }
 
 
 .experience{
+    
+    display: grid;
+    grid-template-rows: 10% 27% 27% 27%  ;
     background-color:var(--bg-card-color);
     margin-top: 10px;
     border-radius: 5px;
+    row-gap: 5px;
 
 }
+
 .principaltitle{
-    font-size: 15px;
-    padding: 0;
+
+    margin-top: 20;
+    font-size: 22px;
+    color: var(--color-title);
+    text-align: left;
+    padding-left: 40px;
+    
 }
+
+.experienceItem{
+    display: inline-flex;
+    margin: 0;    
+    border:solid 2px white;
+    border-radius: 5px;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.image-experience{
+/* background-color: red;*/
+    
+    height: 95%;
+    width: 60%;
+}
+
+.image-experience img{
+    width: inherit;
+    
+}
+
+.information-experience{
+    width: 80%;
+    color: gray;
+    padding-right: 6px;
+
+
+}
+
 
 .experienceItem h3{
     font-size: 15px;
     text-align: justify;
-    padding: 0;
-    font-family: 'Acme', sans-serif;
 }
 
 /*End aside personal information*/
@@ -109,9 +156,10 @@ body{
 .title{
     font-size: 15px;
     text-align: start;
-    background-color: red;
-    
+    color:var(--color-title );
+    background-color: rebeccapurple;
     padding:0;
+    margin-left: 10px;
 }
 
 .text{
@@ -120,30 +168,35 @@ body{
     text-align: justify;
     background-color: red;
     padding: 0;
+    margin-left: 10px;
+    margin-right: 5px;
 }
+
 /*End section knowledge*/
 
 
 /*Main projects*/
 
 .projects{
-    margin: 0;
+    
     display: grid;
     grid-column: 2 / 6;
     padding: 0;
     grid-template-rows: auto auto auto;
     row-gap:5px ;
-
-
 }
 
 .container-projects{
     background-color: var(--bg-card-color);
     border-radius: 5px;
 
-
 }
 
+.image-projects{
+    display: inline-flex;    
+    height: inherit;
+    background-color: rebeccapurple;
+}
 
 
 
